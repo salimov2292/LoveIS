@@ -1,11 +1,45 @@
+@font-face
+  font-family: 'Poppins'
+  src: url(../fonts/Poppins-Regular.ttf)
+body
+  font-family: 'Poppins'
 .container
-  max-width: 1440px
-  margin: 0 auto
+  background: rgba(18, 18, 18, 0.5)
+
 .header
-  background: #181818
-.section
-  &__preview
-    background: url('../img/header-img.png') center (center/cover) no-repeat
-    min-height: 716px
-  &__main-bg
-    width: 100%
+  min-height: 914px
+  // background: url('../img/IMG_0677.JPG') center (center/cover) no-repeat
+  // background-position-y: -150px
+  background: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%), url('../img/IMG_0677.JPG') center (center/cover) no-repeat
+  &__img
+    width: 600px
+  &__nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: #0000
+    width: 1400px
+    margin: 0 auto
+  &__items
+    display: flex
+    color: white
+    line-height: 50px
+    li
+      padding-right: 56px
+      margin-bottom: 0
+      font-family: 'Poppins'
+      font-weight: 400
+      font-size: 15px
+      color: #FFFFFF
+      list-style: none
+      &:last-child
+        padding-right: 31px
+button
+  width: 155px
+  height: 42px
+  background: #FFFFFF
+  border-radius: 14px
+  border: none
+  font-family: 'Poppins'
+  font-weight: 400
+  cursor: pointer
